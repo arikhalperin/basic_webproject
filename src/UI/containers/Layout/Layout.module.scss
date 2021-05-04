@@ -1,0 +1,26 @@
+.container {
+	// background: -webkit-linear-gradient(top, #3b3b3b 30%, #f1f1f1 30%);
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+
+	& .sideBar {
+
+	}
+
+	& .main {
+		width: 100%;
+		overflow: auto;
+
+
+		& .mainGradientBg {
+			background: linear-gradient(to bottom, #262D3C 0px 514px, #F8F9FE 514px 100%);
+			min-height: 600px;
+		}
+	}
+
+	& .footer {
+		display: none;
+	}
+
+}

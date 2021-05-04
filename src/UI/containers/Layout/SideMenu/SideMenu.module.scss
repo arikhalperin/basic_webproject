@@ -1,0 +1,113 @@
+@import "../../../styles/variables";
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: #ffffff;
+	width: 11.5vw;
+	min-width: 250px;
+	height: 100vh;
+	padding: 1.5rem 1.2rem 0 1.2rem;
+	overflow: auto;
+
+	.logo {
+		margin-bottom: 2.5rem;
+	}
+
+	.navLinks {
+
+		.navLink {
+			display: flex;
+			align-items: center;
+			color: #{$grey-text-color};
+
+			.linkIcon {
+				transition: all .15s ease;
+				width: 150px;
+				height: 80px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				padding-top: 150px;
+				padding-bottom: 150px;
+				margin-bottom: 50px;
+			}
+
+			&:hover {
+				color: #f00b41 !important;
+			}
+
+			a {
+				padding-left: 0.65rem;
+				transition: all .15s ease;
+				font-weight: 600;
+				font-size: 1.125rem;
+				line-height: 1.5rem;
+				color: #{$grey-text-color};
+
+				&:hover {
+					color: #f00b41 !important;
+				}
+			}
+		}
+
+		.active {
+			color: #{$primary-color} !important;
+
+			a {
+				color: #{$primary-color} !important;
+				font-weight: 600 !important;
+			}
+
+			.linkIcon {
+				color: #F20A41 !important;
+			}
+		}
+
+		/* link has child routes */
+		.navLink.childrenDropdown {
+			margin-bottom: 0;
+		}
+
+		/* child links are smaller */
+		.navLink.childLink {
+			margin-bottom: 0.75rem;
+
+			.linkIcon {
+				width: 22px;
+			}
+
+			a {
+				font-weight: normal;
+				font-size: 1rem;
+				line-height: 1.375rem;
+				color: #{$grey-text-color};
+			}
+		}
+	}
+}
+
+.dropdownDividerTop {
+	height: 1px;
+	width: 100%;
+	background-color: #EEF0F2;
+	margin: 0.875rem 0 0.6875rem 0rem;
+}
+
+.dropdownDividerBottom {
+	height: 1px;
+	width: 100%;
+	background-color: #EEF0F2;
+	margin: 0.6875rem 0 1.3125rem 0rem;
+}
+
+.dropdownOpen svg {
+	transition: all 0.15s ease;
+	transform: rotate(0deg);
+}
+
+.dropdownClosed svg {
+	transition: all 0.15s ease;
+	transform: rotate(-90deg);
+}

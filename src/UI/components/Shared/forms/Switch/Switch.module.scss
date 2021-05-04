@@ -1,0 +1,93 @@
+@import '../../../../styles/variables.scss';
+
+:global {
+    .custom-switch {
+        display: block;
+        .custom-control-label {
+            &:before {
+                height: 1.1rem;
+                width: 2rem;
+            }
+            &:after {
+                height: calc(1rem - 4px);
+                background-color: $negative-color;
+                top: calc(0.25rem + 3px);
+                left: calc(-2.25rem + 4px);
+            }
+        }
+        .custom-control-input{
+            &:checked{
+                ~ .custom-control-label {
+                    &:before{
+                        border-color: #adb5bd;
+                        background-color: $negative-color;
+                    }
+                    &:after {
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+
+        .icon{
+            color: $negative-color;
+        }
+
+        &.green {
+            .custom-control-label {
+                color: #9ad69f;
+                &:after {
+                    background-color: #9ad69f;
+                }
+            }
+            .custom-control-input{
+                &:checked{
+                    ~ .custom-control-label {
+                        &:before{
+                            background-color: #9ad69f;
+                        }
+                    }
+                }
+            }
+        }
+        &.red {
+            .custom-control-label {
+                color: $negative-color;
+            }
+        }
+        &.blue {
+            .custom-control-label {
+                color: $btn-blue;
+                &:after {
+                    background-color: $btn-blue;
+                }
+            }
+            .custom-control-input{
+                &:checked{
+                    ~ .custom-control-label {
+                        &:before{
+                            background-color: $btn-blue;
+                        }
+                    }
+                }
+            }
+        }
+        &.purple {
+            .custom-control-label {
+                color: $purple-color;
+                &:after {
+                    background-color: $purple-color;
+                }
+            }
+            .custom-control-input{
+                &:checked{
+                    ~ .custom-control-label {
+                        &:before{
+                            background-color: $purple-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

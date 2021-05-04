@@ -1,0 +1,28 @@
+@import '../../../../styles/variables.scss';
+
+.checkboxContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15px;
+    height: 15px;
+    border: solid 1px $grey-text-color;
+    border-radius: 4px;
+    transition: all 0.20s ease;
+    cursor: pointer;
+    min-width: 15px;
+
+    svg {
+        color: #ffffff;
+    }
+}
+
+.checkboxContainer.checkboxChecked {
+    border-color: $btn-primary-color;
+    background-color: $btn-primary-color;
+}
+
+.bigCheckBox{
+    height:25px;
+    width: 25px;
+}

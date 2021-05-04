@@ -1,0 +1,21 @@
+@import "../../../styles/variables";
+
+.bodyModal {
+  align-self: center;
+  width: 60%;
+}
+
+.customDropdown {
+  background: transparent !important;
+  color: $grey-text-color !important;
+  border: none !important;
+  box-shadow: none !important;
+  transform: translateY(0) !important;
+  font-weight: bold;
+}
+
+:global {
+  .modal-footer {
+    justify-content: center;
+  }
+}

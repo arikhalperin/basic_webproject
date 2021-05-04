@@ -1,0 +1,14 @@
+@import "../../../styles/variables";
+
+.customDropdown {
+  background: transparent !important;
+  color: $grey-text-color !important;
+  border: none !important;
+  box-shadow: none !important;
+  transform: translateY(0) !important;
+  font-weight: bold;
+
+}
+.lightGrey{
+  color: rgba(177, 177, 177, 0.938);
+}

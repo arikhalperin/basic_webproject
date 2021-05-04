@@ -1,0 +1,26 @@
+@import "../../../styles/variables";
+
+.btnBottom {
+
+}
+
+.btnPurple {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  padding: 0.5em 2em;
+  background-color: #f00b41;
+  color: #fff;
+  transition: all .15s ease;
+  border-radius: 10px;
+
+  &:hover {
+    background-color: #c80828;
+    color: #fff;
+  }
+}
+
+.btnBlock {
+  width: 100%;
+}

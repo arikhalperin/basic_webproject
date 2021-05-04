@@ -1,0 +1,23 @@
+.skeleton {
+    background-color: #8898AA;
+    border-radius: 4px;
+    display: inline-block;
+    line-height: 1;
+    width: 100%;
+}
+
+.skeletonTransparent {
+    background-color: transparent;
+    display: inline-block;
+    line-height: 1;
+    width: 100%;
+}
+
+/* .react-loading-skeleton {
+        background-color: ${color};
+        background-image: linear-gradient(
+          90deg,
+          ${color},
+          ${highlightColor},
+          ${color}
+    ); */

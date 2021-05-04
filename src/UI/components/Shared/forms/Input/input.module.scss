@@ -1,0 +1,21 @@
+@import "../../../../styles/variables";
+
+.input {
+	transition: all 0.2s ease;
+	width: 100%;
+	padding: 0 10px;
+	background-color: #FFF;
+	border: 1px solid $grey-text-color;
+	height: 45px;
+	font-size: 18px;
+	text-align: left;
+	letter-spacing: .5px;
+	border-radius: 10px;
+	box-shadow: none;
+	color: #000;
+
+	&:focus {
+		background-color: #FFF;
+		border-color: #556588;
+	}
+}

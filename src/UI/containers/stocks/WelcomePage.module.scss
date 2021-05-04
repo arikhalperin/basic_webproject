@@ -1,0 +1,28 @@
+@import "../../styles/variables";
+.options {
+  display: flex;
+  align-items: center;
+  color: $grey-text-color;
+  height: 50px;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 22px;
+
+
+  .add {
+    margin-right: 50px;
+    cursor: pointer;
+  }
+}
+
+.wrapTableSelection{
+  display: flex;
+  align-items: center;
+  > div{
+    margin-right: 10px;
+  }
+}
+
+.trash {
+  cursor: pointer;
+}
