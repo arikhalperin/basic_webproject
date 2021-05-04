@@ -1,6 +1,7 @@
 import {action, observable} from "mobx";
 import HistoricalValue from "../../common/models/HistoricalValue";
-import {act} from "react-dom/test-utils";
+import StocksFetcher from "../../infrastructure/fetchers/StocksFetcher";
+
 
 
 class GoogleStore {
@@ -8,14 +9,14 @@ class GoogleStore {
     historical_values: HistoricalValue[] = []
 
     @action
-    getStock = async (callbackFunc?: () => void) => {
-        const {values} =  await StocskFetcher.getStock("GOOGLE");
+    getStock = async () => {
+        const values =  await StocksFetcher.getStock("google");
         this.set_historical_values(values)
     }
 
     @action
-    private set_historical_values(values: HistoricalValue[]) {
-        this.historical_values = values
+    private set_historical_values(values) {
+        this.historical_values = values;
     };
 };
 

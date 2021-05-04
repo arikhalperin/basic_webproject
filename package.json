@@ -15,6 +15,7 @@
     "chart.js": "^2.9.3",
     "chroma-js": "^2.1.0",
     "final-form": "4.19.1",
+    "google-finance": "^0.1.12",
     "hls.js": "^0.14.16",
     "i18next": "19.4.4",
     "i18next-browser-languagedetector": "4.1.1",
@@ -51,7 +52,8 @@
     "wavesurfer.js": "^4.1.1",
     "web-vitals": "^1.1.1",
     "xlsx": "^0.16.9",
-    "yahoo-finance": "^0.3.7"
+    "yahoo-finance": "^0.3.7",
+    "yarn": "^1.22.10"
   },
   "devDependencies": {
     "@types/jest": "24.9.1",

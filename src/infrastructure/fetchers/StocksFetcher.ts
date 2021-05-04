@@ -1,14 +1,23 @@
+import googleFinance from "google-finance";
+import HistoricalValue from "../../common/models/HistoricalValue";
+
+
+interface quoteIf {
+    close: number
+}
+
 class StocksFetcher {
 
-    async getStocks(stock_name): Promise<any> {
-        try {
+    async getStock(stock_name): Promise<HistoricalValue[]> {
 
+        let result:Array<HistoricalValue> = []
 
-            return await this.get('/actions', {}, {sort, order, offset, max_elements});
-        } catch (err) {
-            throw err;
+        for(let i=0;i<12;i++) {
+            const historicalValue = new HistoricalValue(i);
+            result.push(historicalValue)
         }
-    }
+        return result;
+    };
 
 }
 
