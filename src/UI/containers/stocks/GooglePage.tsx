@@ -15,20 +15,13 @@ const googleStore: GoogleStore = rootStores[GOOGLE_STORE];
 const GooglePage = observer(() => {
     const [isLoading, setIsLoading] = useState(false);
 
-    const {historical_values} = googleStore;
-
     useEffect(() => {
         fetchData()
     }, []);
 
-    useEffect(() => {
-        console.log(historical_values);
-    }, [historical_values])
-
     const fetchData = async () => {
         setIsLoading(true);
         await googleStore.getStock();
-        console.log(historical_values)
         console.log(googleStore.historical_values)
         setIsLoading(false);
     }
